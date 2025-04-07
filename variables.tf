@@ -11,6 +11,5 @@ variable "project" {
 }
 
 variable "ssh_key" {
-  description = "Clé publique SSH injectée via GitHub Actions"
-  type        = string
+  default = ""
 }
