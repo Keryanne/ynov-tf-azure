@@ -1,5 +1,5 @@
 variable "prefix" {
-   default = "keryanne-isidore-ci-cd" # A personnaliser avec votre nom
+   default = "keryanne-isidore" # A personnaliser avec votre nom
 }
 
 variable "environment" {
