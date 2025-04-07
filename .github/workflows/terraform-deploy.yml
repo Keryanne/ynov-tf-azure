@@ -1,15 +1,15 @@
 name: "Terraform Deploy"
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:  
 
 jobs:
   terraform:
     name: "Terraform Init, Plan, and Apply"
     runs-on: ubuntu-latest
+    env:
+      TF_VAR_ssh_key: ${{ secrets.ID_RSA }}
+
 
     steps:
       - name: Checkout repository
