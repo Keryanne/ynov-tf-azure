@@ -11,5 +11,6 @@ variable "project" {
 }
 
 variable "ssh_key" {
-  default = ""
+  description = "Clé publique SSH"
+  type        = string
 }
